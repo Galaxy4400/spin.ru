@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-fix>
+			<div class="header__container _container">
+				<div class="header__body">
+					<a class="header__logo" href="#">
+						<img src="assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu" data-menu="main-menu">
+						<nav class="menu__body" data-menu-container="main-menu">
+							<ul class="menu__list">
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Как это работает</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Возможности</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 2</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Материалы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 3</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Отрасли</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 4</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Ресурсы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 5</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Компания</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a class="menu__btn btn" href="#" data-adapt="menu,1380">Произвести</a>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__info main-contacts" data-adapt="menu__body,700">
+							<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+							<span>пн—пт с 9:00 до 18:00</span>
+						</div>
+						<button class="header__action _icon-search" type="button"></button>
+						<button class="header__action _icon-login" type="button"></button>
+						<button class="header__action menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page__inner page-inner">
+
+				<header class="filter">
+					<div class="filter__container _container">
+						<div class="filter__body" data-spoiler="filter">
+							<div class="filter__content" data-spoiler-item>
+								<div class="filter__head">
+									<div class="filter__main">
+										<h1 class="filter__title">Блог</h1>
+										<nav class="filter__breadcrumbs breadcrumbs">
+											<ul class="breadcrumbs__list">
+												<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Главная">Главная</a></li>
+												<li class="breadcrumbs__item"><span class="breadcrumbs__current" title="Блог">Блог</span></li>
+											</ul>
+										</nav>
+									</div>
+									<form class="filter__search filter-search _active" action="./filter-search/" method="get">
+										<input class="filter-search__input input" type="text" name="fs">
+										<button class="filter-search__btn _icon-search" type="submit"></button>
+									</form>
+									<button class="filter__control _icon-arrow-1" type="button" data-spoiler-control>Фильтры</button>
+								</div>
+								<div class="filter__container-spoiler" data-spoiler-container>
+									<div class="filter__categories">
+										<div class="filter__category">
+											<h4 class="filter__label">Темы</h4>
+											<div class="filter__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+										<div class="filter__category">
+											<h4 class="filter__label">Категории</h4>
+											<div class="filter__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+										<div class="filter__category">
+											<h4 class="filter__label">Категории</h4>
+											<div class="filter__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<section class="page-inner__section events">
+					<div class="events__container _container-small">
+						<div class="events__head">
+							<div class="events__label">Призыв к подписке на соц сети: телега, вк, ютуб, пинтерест</div>
+							<h2 class="events__title">События</h2>
+						</div>
+						<div class="events__body">
+							<div class="events__row">
+								<div class="events__column events__column_left">
+									<div class="event">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="events__column events__column_right">
+									<div class="event event_row">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+									<div class="event event_row">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="events__row">
+								<div class="events__column events__column_left">
+									<div class="event">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="events__column events__column_right">
+									<div class="event event_row">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк Краткое описание отрасли</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+									<div class="event event_row">
+										<a class="event__image _ibg" href="#">
+											<img src="assets/img/ff4.jpg" alt="img">
+										</a>
+										<div class="event__content">
+											<h4 class="event__title"><a href="#">Название 1-3 строки</a></h4>
+											<div class="event__desc">
+												<p>Краткое описание отрасли 5-10 строк Краткое описание отрасли 5-10 строк</p>
+											</div>
+											<div class="event__tags">
+												<div class="tag">3d-печать</div>
+												<div class="tag">статья</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section articles-section">
+					<div class="articles-section__container _container">
+						<h2 class="articles-section__title">Все статьи <span class="articles-section__count">(123)</span></h2>
+						<div class="articles-section__body">
+							<div class="articles-section__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item industry-card">
+								<a class="industry-card__img _ibg" href="#">
+									<img src="assets/img/a3.jpg" alt="img">
+								</a>
+								<div class="industry-card__content">
+									<h4 class="industry-card__title"><a href="#">Аэрокосмическая промышленность и авиация</a></h4>
+									<p class="industry-card__desc">Производим аэродинамические детали для самолетов, дронов, спутников и ракет с сертификатом AS 9100.</p>
+									<div class="industry-card__tags">
+										<div class="tag">3D-печать</div>
+										<div class="tag">статья</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section offer-line">
+					<div class="offer-line__container _container">
+						<div class="offer-line__body">
+							<h2 class="offer-line__title">Попробуйте наш инструмент мгновенного цитирования прямо сейчас</h2>
+							<a class="offer-line__btn btn btn_light" href="#">оставить заявку</a>
+						</div>
+					</div>
+					<figure class="offer-line__bg _ibg">
+					</figure>
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_2">
+						<div class="footer__menu footer-menu">
+							<a class="footer-menu__link" href="#">О нас</a>
+							<a class="footer-menu__link" href="#">Каталог</a>
+							<a class="footer-menu__link" href="#">Как сделать заказ</a>
+							<a class="footer-menu__link" href="#">Как связаться</a>
+							<a class="footer-menu__link" href="#">Возможности</a>
+							<a class="footer-menu__link" href="#">Гос. закупки</a>
+							<a class="footer-menu__link" href="#">Стать дилером</a>
+							<a class="footer-menu__link" href="#">Кейсы</a>
+							<a class="footer-menu__link" href="#">Гарантии и возврат</a>
+							<a class="footer-menu__link" href="#">Стать партнером</a>
+							<a class="footer-menu__link" href="#">Материалы</a>
+							<a class="footer-menu__link" href="#">Ответственность поставщика</a>
+							<a class="footer-menu__link" href="#">Устойчивое развитие</a>
+							<a class="footer-menu__link" href="#">Акции</a>
+							<a class="footer-menu__link" href="#">Отрасли</a>
+							<a class="footer-menu__link" href="#">Уведомление об авторских правах</a>
+							<a class="footer-menu__link" href="#">Работа</a>
+							<a class="footer-menu__link" href="#">События (выставки/форумы)</a>
+							<a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__column footer__column_3">
+						<div class="footer__contacts footer-contacts">
+							<div class="footer-contacts__chats">
+								<span>Чат с менеджером</span>
+								<a class="_icon-wu" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+							</div>
+							<div class="footer-contacts__info main-contacts">
+								<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+								<span>пн—пт с 9:00 до 18:00</span>
+							</div>
+							<a class="footer-contacts__email" href="mailto:zakaz@spin.moscow">zakaz@spin.moscow</a>
+							<span class="footer-contacts__address">г. Москва, Дмитровское ш., д. 9, стр. 3</span>
+							<div class="footer-contacts__actions">
+								<button class="footer-contacts__btn btn" type="button">оставить заявку</button>
+								<button class="footer-contacts__btn btn" type="button">Произвести</button>
+							</div>
+							<div class="footer-contacts__socials socials">
+								<a class="_icon-yt" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+								<a class="_icon-tt" href="#"></a>
+								<a class="_icon-dzen" href="#"></a>
+								<a class="_icon-ch" href="#"></a>
+								<a class="_icon-vk" href="#"></a>
+								<a class="_icon-pf" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="wrapper"></button>
+
+	<button class="chat _icon-chat _fixed-block" type="button"></button>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

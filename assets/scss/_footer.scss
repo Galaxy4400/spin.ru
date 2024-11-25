@@ -1,0 +1,141 @@
+.footer {
+	padding: rem(70) rem(0);
+	border-top: rem(1) solid #ececec;
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: rem(132);
+		@media (max-width: em($md0)) {
+			gap: rem(80);
+		}
+		@media (max-width: em($md1)) {
+			flex-direction: column;
+			gap: rem(30);
+		}
+	}
+	// .footer__column
+	&__column {
+		// .footer__column_1
+		&_1 {
+			@media (min-width: em($md1+1)) {
+				max-width: rem(220);
+			}
+			@media (max-width: em($md1)) {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		// .footer__column_2
+		&_2 {
+			flex: 1 1 auto;
+		}
+		// .footer__column_3
+		&_3 {
+			@media (min-width: em($md1+1)) {
+				max-width: rem(326);
+			}
+			@media (max-width: em($md1)) {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	// .footer__logo
+	&__logo {
+	}
+	// .footer__menu
+	&__menu {
+	}
+	// .footer__contacts
+	&__contacts {
+	}
+	// .footer__address
+	&__address {
+	}
+	// .footer__actions
+	&__actions {
+	}
+	// .footer__btn
+	&__btn {
+	}
+	// .footer__socials
+	&__socials {
+	}
+}
+
+//---------------------------------------------------------------
+.footer-menu {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: rem(15) rem(30);
+	@media (max-width: em($md3)) {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+	// .footer-menu__link
+	&__link {
+		display: inline-flex;
+		font-size: rem(19);
+		line-height: normal;
+		&._active {
+			color: var(--color-main);
+		}
+	}
+}
+
+//---------------------------------------------------------------
+.footer-contacts {
+	display: grid;
+	grid-gap: rem(13);
+	@media (max-width: em($md1)) {
+		text-align: center;
+	}
+	// .footer-contacts__chats
+	&__chats {
+		font-size: rem(19);
+		display: flex;
+		align-items: center;
+		gap: rem(15);
+		@media (max-width: em($md1)) {
+			justify-content: center;
+		}
+		a {
+			color: #000;
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--color-main);
+				}
+			}
+		}
+	}
+	// .footer-contacts__info
+	&__info {
+	}
+	// .footer-contacts__email
+	&__email {
+	}
+	// .footer-contacts__address
+	&__address {
+		color: #000;
+	}
+	// .footer-contacts__actions
+	&__actions {
+		padding: rem(10) 0px;
+		display: grid;
+		grid-gap: rem(10);
+		justify-items: start;
+		@media (max-width: em($md1)) {
+			justify-items: center;
+		}
+	}
+	// .footer-contacts__btn
+	&__btn {
+	}
+	// .footer-contacts__socials
+	&__socials {
+	}
+}

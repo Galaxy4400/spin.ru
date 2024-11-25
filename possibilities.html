@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-fix>
+			<div class="header__container _container">
+				<div class="header__body">
+					<a class="header__logo" href="#">
+						<img src="assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu" data-menu="main-menu">
+						<nav class="menu__body" data-menu-container="main-menu">
+							<ul class="menu__list">
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Как это работает</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link _on-page" data-menu-control>Возможности</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 2</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Материалы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 3</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Отрасли</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 4</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Ресурсы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 5</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Компания</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a class="menu__btn btn" href="#" data-adapt="menu,1380">Произвести</a>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__info main-contacts" data-adapt="menu__body,700">
+							<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+							<span>пн—пт с 9:00 до 18:00</span>
+						</div>
+						<button class="header__action _icon-search" type="button"></button>
+						<button class="header__action _icon-login" type="button"></button>
+						<button class="header__action menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main class="page">
+
+			<div class="page__inner page-inner">
+
+				<section class="main-head">
+					<div class="main-head__container _container">
+						<div class="main-head__body">
+							<div class="main-head__column main-head__column_left">
+								<figure class="main-head__image _ibg">
+									<img src="assets/img/bg1.jpg" alt="image">
+								</figure>
+								<a class="main-head__yandex" href="#">
+									<img src="assets/img/yandex.png" alt="image">
+								</a>
+							</div>
+							<div class="main-head__column main-head__column_right">
+								<div class="main-head__content">
+									<h1 class="main-head__title">Надежный способ получения нестандартных деталей</h1>
+									<div class="main-head__text">
+										<p>Мы разрабатываем и производим детали для наших клиентов. Быстро и качественно с применением цифровых средств измерений, аддитивных технологий и других способов обработки материалов.</p>
+										<p>Наш центр измерений, исследований и дизайна профессионально решает задачи реверсивного инжиниринга, а производство применяет 10 промышленных технологий печати и более 30 материалов.</p>
+									</div>
+									<button class="main-head__btn btn btn_light" type="button">Оставить заявку</button>
+								</div>
+								<!-- <div class="main-head__banners">
+									<figure class="main-head__banner"><img src="assets/img/b1.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b5.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b6.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b2.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b3.svg" alt="banner"></figure>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="page-inner__section anchors">
+					<div class="anchors__body">
+						<div class="anchors__item anchors__item_1">
+							<a class="anchors__link" data-goto="page-inner__section_anchor-1" data-offset="200">Центр измерений исследований и дизайна</a>
+						</div>
+						<div class="anchors__item anchors__item_2">
+							<a class="anchors__link" data-goto="page-inner__section_anchor-2" data-offset="200">Центр производства</a>
+						</div>
+					</div>
+				</div>
+
+				<section class="page-inner__section page-inner__section_anchor-1 design">
+					<div class="design__container _container">
+						<div class="design__head head-line">
+							<h2 class="head-line__title">Центр измерений исследований и дизайна</h2>
+							<p class="head-line__text">Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки</p>
+						</div>
+					</div>
+					<section class="design__section">
+						<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+						<div class="design__slider design-slider-1" data-swiper>
+							<div class="design-slider-1__slides">
+								<article class="design-slider-1__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-1__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-1__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+							</div>
+							<div class="design-slider-1__actions">
+								<div class="design-slider-1__arrows slider-arrows">
+									<button class="design-slider-1__arrow design-slider-1__arrow_prev _icon-arrow-2" type="button"></button>
+									<button class="design-slider-1__arrow design-slider-1__arrow_next _icon-arrow-2" type="button"></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="design__section">
+						<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+						<div class="design__slider design-slider-2" data-swiper>
+							<div class="design-slider-2__slides">
+								<article class="design-slider-2__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-2__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-2__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-2__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+							</div>
+							<div class="design-slider-2__actions">
+								<div class="design-slider-2__arrows slider-arrows">
+									<button class="design-slider-2__arrow design-slider-2__arrow_prev _icon-arrow-2" type="button"></button>
+									<button class="design-slider-2__arrow design-slider-2__arrow_next _icon-arrow-2" type="button"></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="design__section">
+						<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+						<div class="design__slider design-slider-3" data-swiper>
+							<div class="design-slider-3__slides">
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-3__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+							</div>
+							<div class="design-slider-3__actions">
+								<div class="design-slider-3__arrows slider-arrows">
+									<button class="design-slider-3__arrow design-slider-3__arrow_prev _icon-arrow-2" type="button"></button>
+									<button class="design-slider-3__arrow design-slider-3__arrow_next _icon-arrow-2" type="button"></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<section class="page-inner__section">
+					<div class="offer-request-line">
+						<div class="offer-request-line__container _container">
+							Не уверены, какой процесс подходит лдя вашего дизайна детали? Наши менеджеры вам помогут. <a href="#">Оставьте заявку</a>.
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section page-inner__section_anchor-2 design">
+					<div class="design__container _container">
+						<div class="design__head head-line">
+							<h2 class="head-line__title">Центр измерений исследований и дизайна</h2>
+							<p class="head-line__text">Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки Описание раздела 2-3 строчки</p>
+						</div>
+					</div>
+					<section class="design__section">
+						<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+						<div class="design__slider design-slider-4" data-swiper>
+							<div class="design-slider-4__slides">
+								<article class="design-slider-4__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-4__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-4__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-4__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-4__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+							</div>
+							<div class="design-slider-4__actions">
+								<div class="design-slider-4__arrows slider-arrows">
+									<button class="design-slider-4__arrow design-slider-4__arrow_prev _icon-arrow-2" type="button"></button>
+									<button class="design-slider-4__arrow design-slider-4__arrow_next _icon-arrow-2" type="button"></button>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="page-inner__section">
+					<div class="offer-request-line">
+						<div class="offer-request-line__container _container">
+							Не уверены, какой процесс подходит для вавшего дизайна детали? Узнайте больше о <a href="#">выборе правильного процесса 3D-печати</a>.
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section design">
+					<section class="design__section">
+						<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+						<div class="design__slider design-slider-5" data-swiper>
+							<div class="design-slider-5__slides">
+								<article class="design-slider-5__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-5__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-5__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-5__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+								<article class="design-slider-5__slide item-card">
+									<a class="item-card__image _ibg" href="#">
+										<img src="assets/img/d1.png" alt="image">
+									</a>
+									<div class="item-card__content">
+										<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+										<div class="item-card__text _special-styles">
+											<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+											<ul>
+												<li>± 0,3% при ннижнем пределе</li>
+												<li>Допуски до 0,1 мм</li>
+												<li>Сроки выполнения заказа от 5 рабочих дней</li>
+											</ul>
+										</div>
+										<a class="item-card__link more-link" href="#">Подробнее</a>
+									</div>
+								</article>
+							</div>
+							<div class="design-slider-5__actions">
+								<div class="design-slider-5__arrows slider-arrows">
+									<button class="design-slider-5__arrow design-slider-5__arrow_prev _icon-arrow-2" type="button"></button>
+									<button class="design-slider-5__arrow design-slider-5__arrow_next _icon-arrow-2" type="button"></button>
+								</div>
+							</div>
+						</section>
+						<section class="design__section">
+							<h3 class="design__title">Анализ геометрии и внутреннего строения материалов и изделий</h3>
+							<div class="design__slider design-slider-6" data-swiper>
+								<div class="design-slider-6__slides">
+									<article class="design-slider-6__slide item-card">
+										<a class="item-card__image _ibg" href="#">
+											<img src="assets/img/d1.png" alt="image">
+										</a>
+										<div class="item-card__content">
+											<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+											<div class="item-card__text _special-styles">
+												<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+												<ul>
+													<li>± 0,3% при ннижнем пределе</li>
+													<li>Допуски до 0,1 мм</li>
+													<li>Сроки выполнения заказа от 5 рабочих дней</li>
+												</ul>
+											</div>
+											<a class="item-card__link more-link" href="#">Подробнее</a>
+										</div>
+									</article>
+									<article class="design-slider-6__slide item-card">
+										<a class="item-card__image _ibg" href="#">
+											<img src="assets/img/d1.png" alt="image">
+										</a>
+										<div class="item-card__content">
+											<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+											<div class="item-card__text _special-styles">
+												<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+												<ul>
+													<li>± 0,3% при ннижнем пределе</li>
+													<li>Допуски до 0,1 мм</li>
+													<li>Сроки выполнения заказа от 5 рабочих дней</li>
+												</ul>
+											</div>
+											<a class="item-card__link more-link" href="#">Подробнее</a>
+										</div>
+									</article>
+									<article class="design-slider-6__slide item-card">
+										<a class="item-card__image _ibg" href="#">
+											<img src="assets/img/d1.png" alt="image">
+										</a>
+										<div class="item-card__content">
+											<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+											<div class="item-card__text _special-styles">
+												<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+												<ul>
+													<li>± 0,3% при ннижнем пределе</li>
+													<li>Допуски до 0,1 мм</li>
+													<li>Сроки выполнения заказа от 5 рабочих дней</li>
+												</ul>
+											</div>
+											<a class="item-card__link more-link" href="#">Подробнее</a>
+										</div>
+									</article>
+									<article class="design-slider-6__slide item-card">
+										<a class="item-card__image _ibg" href="#">
+											<img src="assets/img/d1.png" alt="image">
+										</a>
+										<div class="item-card__content">
+											<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+											<div class="item-card__text _special-styles">
+												<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+												<ul>
+													<li>± 0,3% при ннижнем пределе</li>
+													<li>Допуски до 0,1 мм</li>
+													<li>Сроки выполнения заказа от 5 рабочих дней</li>
+												</ul>
+											</div>
+											<a class="item-card__link more-link" href="#">Подробнее</a>
+										</div>
+									</article>
+									<article class="design-slider-6__slide item-card">
+										<a class="item-card__image _ibg" href="#">
+											<img src="assets/img/d1.png" alt="image">
+										</a>
+										<div class="item-card__content">
+											<h4 class="item-card__title"><a href="#">Аддитивное производство</a></h4>
+											<div class="item-card__text _special-styles">
+												<p>FDM, SLA, SLS, лазерная резка, гибка</p>
+												<ul>
+													<li>± 0,3% при ннижнем пределе</li>
+													<li>Допуски до 0,1 мм</li>
+													<li>Сроки выполнения заказа от 5 рабочих дней</li>
+												</ul>
+											</div>
+											<a class="item-card__link more-link" href="#">Подробнее</a>
+										</div>
+									</article>
+								</div>
+								<div class="design-slider-6__actions">
+									<div class="design-slider-6__arrows slider-arrows">
+										<button class="design-slider-6__arrow design-slider-6__arrow_prev _icon-arrow-2" type="button"></button>
+										<button class="design-slider-6__arrow design-slider-6__arrow_next _icon-arrow-2" type="button"></button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+
+				<section class="page-inner__section offer-line">
+					<div class="offer-line__container _container">
+						<div class="offer-line__body">
+							<h2 class="offer-line__title">Запускайте ваши детали, напечатанные на 3D-принтере, в прозводство уже сегодня</h2>
+							<a class="offer-line__btn btn btn_light" href="#">оставить заявку</a>
+						</div>
+					</div>
+					<figure class="offer-line__bg _ibg">
+					</figure>
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_2">
+						<div class="footer__menu footer-menu">
+							<a class="footer-menu__link" href="#">О нас</a>
+							<a class="footer-menu__link" href="#">Каталог</a>
+							<a class="footer-menu__link" href="#">Как сделать заказ</a>
+							<a class="footer-menu__link" href="#">Как связаться</a>
+							<a class="footer-menu__link" href="#">Возможности</a>
+							<a class="footer-menu__link" href="#">Гос. закупки</a>
+							<a class="footer-menu__link" href="#">Стать дилером</a>
+							<a class="footer-menu__link" href="#">Кейсы</a>
+							<a class="footer-menu__link" href="#">Гарантии и возврат</a>
+							<a class="footer-menu__link" href="#">Стать партнером</a>
+							<a class="footer-menu__link" href="#">Материалы</a>
+							<a class="footer-menu__link" href="#">Ответственность поставщика</a>
+							<a class="footer-menu__link" href="#">Устойчивое развитие</a>
+							<a class="footer-menu__link" href="#">Акции</a>
+							<a class="footer-menu__link" href="#">Отрасли</a>
+							<a class="footer-menu__link" href="#">Уведомление об авторских правах</a>
+							<a class="footer-menu__link" href="#">Работа</a>
+							<a class="footer-menu__link" href="#">События (выставки/форумы)</a>
+							<a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__column footer__column_3">
+						<div class="footer__contacts footer-contacts">
+							<div class="footer-contacts__chats">
+								<span>Чат с менеджером</span>
+								<a class="_icon-wu" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+							</div>
+							<div class="footer-contacts__info main-contacts">
+								<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+								<span>пн—пт с 9:00 до 18:00</span>
+							</div>
+							<a class="footer-contacts__email" href="mailto:zakaz@spin.moscow">zakaz@spin.moscow</a>
+							<span class="footer-contacts__address">г. Москва, Дмитровское ш., д. 9, стр. 3</span>
+							<div class="footer-contacts__actions">
+								<button class="footer-contacts__btn btn" type="button">оставить заявку</button>
+								<button class="footer-contacts__btn btn" type="button">Произвести</button>
+							</div>
+							<div class="footer-contacts__socials socials">
+								<a class="_icon-yt" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+								<a class="_icon-tt" href="#"></a>
+								<a class="_icon-dzen" href="#"></a>
+								<a class="_icon-ch" href="#"></a>
+								<a class="_icon-vk" href="#"></a>
+								<a class="_icon-pf" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="wrapper"></button>
+
+	<button class="chat _icon-chat _fixed-block" type="button"></button>
+	
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

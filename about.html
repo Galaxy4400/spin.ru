@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-fix>
+			<div class="header__container _container">
+				<div class="header__body">
+					<a class="header__logo" href="#">
+						<img src="assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu" data-menu="main-menu">
+						<nav class="menu__body" data-menu-container="main-menu">
+							<ul class="menu__list">
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Как это работает</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Возможности</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 2</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Материалы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 3</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Отрасли</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 4</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Ресурсы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 5</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Компания</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a class="menu__btn btn" href="#" data-adapt="menu,1380">Произвести</a>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__info main-contacts" data-adapt="menu__body,700">
+							<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+							<span>пн—пт с 9:00 до 18:00</span>
+						</div>
+						<button class="header__action _icon-search" type="button"></button>
+						<button class="header__action _icon-login" type="button"></button>
+						<button class="header__action menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main class="page">
+
+			<div class="page__inner page-inner">
+
+				<section class="page__section main-head">
+					<div class="main-head__container _container">
+						<div class="main-head__body">
+							<div class="main-head__column main-head__column_left">
+								<figure class="main-head__image _ibg">
+									<img src="assets/img/bg1.jpg" alt="image">
+								</figure>
+								<a class="main-head__yandex" href="#">
+									<img src="assets/img/yandex.png" alt="image">
+								</a>
+							</div>
+							<div class="main-head__column main-head__column_right">
+								<div class="main-head__content">
+									<h1 class="main-head__title">Надежный способ получения нестандартных деталей</h1>
+									<div class="main-head__text">
+										<p>Мы разрабатываем и производим детали для наших клиентов. Быстро и качественно с применением цифровых средств измерений, аддитивных технологий и других способов обработки материалов.</p>
+										<p>Наш центр измерений, исследований и дизайна профессионально решает задачи реверсивного инжиниринга, а производство применяет 10 промышленных технологий печати и более 30 материалов.</p>
+									</div>
+								</div>
+								<!-- <div class="main-head__banners">
+									<figure class="main-head__banner"><img src="assets/img/b1.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b5.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b6.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b2.svg" alt="banner"></figure>
+									<figure class="main-head__banner"><img src="assets/img/b3.svg" alt="banner"></figure>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__section about-gallery">
+					<div class="about-gallery__container _container-small">
+						<div class="about-gallery__body">
+							<div class="about-gallery__column about-gallery__column_info">
+								<h3 class="about-gallery__title">Заголовок 1-3 строчки</h3>
+								<div class="about-gallery__text _special-styles">
+									<p>Описание, как много всего к компании и что ни у кого такого нет Описание, как много всего к компании и что ни у кого такого нет Описание, как много всего к компании и что ни у кого такого нет Описание, как много всего к компании и что ни у кого такого нет Описание, как много всего к компании и что ни у кого такого нет</p>
+									<ul>
+										<li>Описание, как много всего к компании и что ни у кого такого нет </li>
+										<li>Описание, как много всего к компании и что ни у кого такого нет </li>
+										<li>Описание, как много всего к компании и что ни у кого такого нет </li>
+										<li>Описание, как много всего к компании и что ни у кого такого нет </li>
+									</ul>
+								</div>
+							</div>
+							<div class="about-gallery__column about-gallery__column_gallery">
+								<div class="about-gallery__slider-main obout-slider-main" data-swiper>
+									<div class="obout-slider-main__slides" data-gallery>
+										<div class="obout-slider-main__slide">
+											<a class="obout-slider-main__image" href="assets/img/gal1.jpg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</a>
+										</div>
+										<div class="obout-slider-main__slide">
+											<a class="obout-slider-main__image" href="assets/img/gal1.jpg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</a>
+										</div>
+										<div class="obout-slider-main__slide">
+											<a class="obout-slider-main__image" href="assets/img/gal1.jpg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</a>
+										</div>
+									</div>
+									<div class="obout-slider-main__arrows">
+										<div class="obout-slider-main__arrow obout-slider-main__arrow_prev"></div>
+										<div class="obout-slider-main__arrow obout-slider-main__arrow_next"></div>
+									</div>
+								</div>
+								<div class="about-gallery__slider-small obout-slider-small" data-swiper>
+									<div class="obout-slider-small__slides">
+										<div class="obout-slider-small__slide">
+											<figure class="obout-slider-small__image _ibg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</figure>
+										</div>
+										<div class="obout-slider-small__slide">
+											<figure class="obout-slider-small__image _ibg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</figure>
+										</div>
+										<div class="obout-slider-small__slide">
+											<figure class="obout-slider-small__image _ibg">
+												<img src="assets/img/gal1.jpg" alt="image">
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section about-persone">
+					<div class="about-persone__container _container-narrow">
+						<div class="about-persone__body">
+							<div class="about-persone__info">
+								<div class="about-persone__text">
+									<p>“Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек Цитата 5-10 строчек”</p>
+								</div>
+								<div class="about-persone__bottom">
+									<div class="about-persone__name">Иванов Иван Иванович</div>
+									<div class="about-persone__position">генеральный директор</div>
+								</div>
+							</div>
+							<figure class="about-persone__image">
+								<img src="assets/img/persone.jpg" alt="persone">
+							</figure>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section about-slider-section">
+					<div class="about-slider-section__container _container-small">
+						<div class="about-slider-section__head head-line">
+							<h2 class="head-line__title">Как мы стали СПИН</h2>
+						</div>
+						<div class="about-slider-section__slider how-slider" data-swiper>
+							<div class="how-slider__slides">
+								<article class="how-slider__slide how-slide">
+									<div class="how-slide__image _ibg">
+										<img src="assets/img/a3.jpg" alt="image">
+									</div>
+									<div class="how-slide__content">
+										<h4 class="how-slide__title">Этап развития №1</h4>
+										<div class="how-slide__text">
+											<p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи</p>
+										</div>
+									</div>
+								</article>
+								<article class="how-slider__slide how-slide">
+									<div class="how-slide__image _ibg">
+										<img src="assets/img/a3.jpg" alt="image">
+									</div>
+									<div class="how-slide__content">
+										<h4 class="how-slide__title">Этап развития №2</h4>
+										<div class="how-slide__text">
+											<p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи</p>
+										</div>
+									</div>
+								</article>
+								<article class="how-slider__slide how-slide">
+									<div class="how-slide__image _ibg">
+										<img src="assets/img/a3.jpg" alt="image">
+									</div>
+									<div class="how-slide__content">
+										<h4 class="how-slide__title">Этап развития №3</h4>
+										<div class="how-slide__text">
+											<p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи</p>
+										</div>
+									</div>
+								</article>
+								<article class="how-slider__slide how-slide">
+									<div class="how-slide__image _ibg">
+										<img src="assets/img/a3.jpg" alt="image">
+									</div>
+									<div class="how-slide__content">
+										<h4 class="how-slide__title">Этап развития №4</h4>
+										<div class="how-slide__text">
+											<p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи</p>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="how-slider__actions">
+								<div class="how-slider__arrows slider-arrows">
+									<button class="how-slider__arrow how-slider__arrow_prev" type="button"></button>
+									<button class="how-slider__arrow how-slider__arrow_next" type="button"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section">
+					<div class="_container-small">
+						<div class="head-line">
+							<h2 class="head-line__title">Первое в мире комбинированное решение</h2>
+							<div class="head-line__text">
+								<p>Работая вместе, СПИН и ее сеть объединяют вас в одного поставщика, который может изготовить практически любой тип нестандартной детали, независимо от объема или сложности вашего проекта. Компания СПИН предлагает молниеносное производство на собственных автоматизированных станках для изготовления быстрообрабатываемых деталей. Сеть СПИН расширяет свои возможности, расширяя производственные мощности и устанавливая оптовые цены. Эта комбинация предоставляет инженерам самое комплексное в мире цифровое производственное решение.</p>
+								<p>Работая вместе, СПИН и ее сеть объединяют вас в одного поставщика, который может изготовить практически любой тип нестандартной детали, независимо от объема или сложности вашего проекта. Компания СПИН предлагает молниеносное производство на собственных автоматизированных станках для изготовления быстрообрабатываемых деталей. Сеть СПИН расширяет свои возможности, расширяя производственные мощности и устанавливая оптовые цены. Эта комбинация предоставляет инженерам самое комплексное в мире цифровое производственное решение.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section about-factory">
+					<div class="about-factory__container _container-small">
+						<div class="about-factory__body">
+							<figure class="about-factory__image">
+								<img src="assets/img/f1.jpg" alt="img">
+							</figure>
+							<div class="about-factory__content">
+								<h2 class="about-factory__title">О заводе</h2>
+								<div class="about-factory__text">Создание прототипов - важнейший шаг в развитии автомобильных технологий, и уж точно не тогда, когда вы хотите ждать запчастей. Независимо от того, требуется ли вам несколько сложных деталей  или несколько тысяч, наша платформа и проектные команды могут быстро предложить цену и доставить компоненты в течение нескольких дней. Мы также можем быстро перейти от прототипирования к мелкосерийному производству и поставлять детали для замены первичных инструментов (РОТ), пока вы все еще ищете серийного поставщика.</div>
+								<a class="about-factory__more more-link" href="#">Посетите наше производство</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section about-partners">
+					<div class="about-partners__container _container-small">
+						<div class="about-partners__body">
+							<div class="about-partners__content">
+								<h2 class="about-partners__title">Партнерство с прессой и СМИ</h2>
+								<div class="about-partners__text _special-styles">
+									<p>Загрузите комплект для печати СПИН для получения изображений, видео и других ресурсов с высоким разрешением. Для получения дополнительной информации обратитесь по адресу <a href="#">zakaz@spin.moscow</a></p>
+								</div>
+								<div class="about-partners__documents documents">
+									<a class="download-document" href="#">Документ для скачивания для прессы</a>
+									<a class="download-document" href="#">Логотип для скачивания для прессы</a>
+									<a class="download-document" href="#">Брендбук для скачивания для прессы</a>
+									<a class="download-document" href="#">Файл для скачивания для прессы</a>
+								</div>
+							</div>
+							<figure class="about-partners__image">
+								<img src="assets/img/gal1.jpg" alt="image">
+							</figure>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section offer-line">
+					<div class="offer-line__container _container">
+						<div class="offer-line__body">
+							<h2 class="offer-line__title">Ощутите жизнь в нашей команде</h2>
+							<a class="offer-line__btn btn btn_light" href="#">загляните в наш телеграм</a>
+						</div>
+					</div>
+					<figure class="offer-line__bg _ibg">
+						<img src="assets/img/gal1.jpg" alt="image">
+					</figure>
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_2">
+						<div class="footer__menu footer-menu">
+							<a class="footer-menu__link" href="#">О нас</a>
+							<a class="footer-menu__link" href="#">Каталог</a>
+							<a class="footer-menu__link" href="#">Как сделать заказ</a>
+							<a class="footer-menu__link" href="#">Как связаться</a>
+							<a class="footer-menu__link" href="#">Возможности</a>
+							<a class="footer-menu__link" href="#">Гос. закупки</a>
+							<a class="footer-menu__link" href="#">Стать дилером</a>
+							<a class="footer-menu__link" href="#">Кейсы</a>
+							<a class="footer-menu__link" href="#">Гарантии и возврат</a>
+							<a class="footer-menu__link" href="#">Стать партнером</a>
+							<a class="footer-menu__link" href="#">Материалы</a>
+							<a class="footer-menu__link" href="#">Ответственность поставщика</a>
+							<a class="footer-menu__link" href="#">Устойчивое развитие</a>
+							<a class="footer-menu__link" href="#">Акции</a>
+							<a class="footer-menu__link" href="#">Отрасли</a>
+							<a class="footer-menu__link" href="#">Уведомление об авторских правах</a>
+							<a class="footer-menu__link" href="#">Работа</a>
+							<a class="footer-menu__link" href="#">События (выставки/форумы)</a>
+							<a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__column footer__column_3">
+						<div class="footer__contacts footer-contacts">
+							<div class="footer-contacts__chats">
+								<span>Чат с менеджером</span>
+								<a class="_icon-wu" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+							</div>
+							<div class="footer-contacts__info">
+								<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+								<span>пн—пт с 9:00 до 18:00</span>
+							</div>
+							<a class="footer-contacts__email" href="mailto:zakaz@spin.moscow">zakaz@spin.moscow</a>
+							<span class="footer-contacts__address">г. Москва, Дмитровское ш., д. 9, стр. 3</span>
+							<div class="footer-contacts__actions">
+								<button class="footer-contacts__btn btn" type="button">оставить заявку</button>
+								<button class="footer-contacts__btn btn" type="button">Произвести</button>
+							</div>
+							<div class="footer-contacts__socials socials">
+								<a class="_icon-yt" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+								<a class="_icon-tt" href="#"></a>
+								<a class="_icon-dzen" href="#"></a>
+								<a class="_icon-ch" href="#"></a>
+								<a class="_icon-vk" href="#"></a>
+								<a class="_icon-pf" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="wrapper"></button>
+
+	<button class="chat _icon-chat _fixed-block" type="button"></button>
+	
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>

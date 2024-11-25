@@ -1,0 +1,283 @@
+:root {
+	--color-error:		#b81111;
+	--color-warning:	#ffc107;
+	--color-success:	#198754;
+	--color-focus:		#26B9FF;
+
+	--color-main-light: #ff6471;
+	--color-main: #C31625;
+	--color-main-dark: #8d000c;
+
+	--color-body-background: #fff;
+	--color-background: #F7F7F7;
+	
+	--color-font: #414140;
+
+	--color-link: #000000;
+	--color-link-hover: #C31625;
+
+	--color-titles: #000000;
+}
+
+//===============================================================
+
+// Стилизация скроллбаров
+@media (any-hover: hover) {
+	::-webkit-scrollbar {
+		width: px(10);
+		height: px(10);
+	}
+
+	::-webkit-scrollbar-track {
+		background: #eeeeee;
+		box-shadow: 0 0 px(2) rgba(0, 0, 0, .2) inset;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--color-main-light);
+		border-radius: px(5);
+		border: px(2) solid #eeeeee;
+		&:hover {
+			background: var(--color-main);
+		}
+	}
+}
+
+//===============================================================
+
+html {
+}
+
+body {
+	color: var(--color-font);
+	background: var(--color-body-background);
+	font-size: rem(18);
+	line-height: prc(26, 18);
+	&._lock {
+		overflow: hidden;
+	}
+
+	//---------------------------------------------------------------
+
+	a {
+		transition: all 0.3s ease 0s;
+		color: var(--color-link);
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-link-hover);
+			}
+		}
+	}
+
+	//---------------------------------------------------------------
+
+	.h1,
+	h1 a,
+	h1 {
+		font-weight: 700;
+		@include adaptiv-value(font-size, 36, 22, 1);
+		line-height: prc(50, 36);
+		color: var(--color-titles);
+		letter-spacing: 0.72px;
+		text-transform: uppercase;
+	}
+	.h2,
+	h2 a,
+	h2 {
+		font-weight: 700;
+		@include adaptiv-value(font-size, 32, 20, 1);
+		line-height: prc(42, 32);
+		color: var(--color-titles);
+		line-height: normal;
+	}
+	.h3,
+	h3 a,
+	h3 {
+		font-weight: 700;
+		@include adaptiv-value(font-size, 25, 20, 1);
+		line-height: prc(42, 25);
+		color: var(--color-titles);
+		line-height: normal;
+	}
+	.h4,
+	h4 a,
+	h4 {
+		font-weight: 700;
+		@include adaptiv-value(font-size, 21, 18, 1);
+		line-height: prc(26, 21);
+		color: var(--color-titles);
+	}
+	.h5,
+	h5 a,
+	h5 {
+		@include adaptiv-value(font-size, 16, 16, 1);
+		line-height: normal;
+		color: var(--color-titles);
+		font-weight: 700;
+	}
+
+	
+	//---------------------------------------------------------------
+	._special-styles {
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0px 0px rem(20) 0px;
+		}
+
+		a {
+			transition: all 0.3s ease 0s;
+			color: var(--color-main);
+			font-weight: 500;
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--color-main-dark);
+					text-decoration: underline;
+				}
+			}
+		}
+
+		p {
+			margin: 0px 0px rem(20) 0px;
+		}
+
+		figure {
+			display: inline-block;
+			margin: 0px 0px rem(20) 0px;
+			img {
+				border-radius: rem(5);
+			}
+		}
+
+		ul {
+			padding: 0px 0px 0px rem(15);
+			margin: 0px 0px rem(10) 0px;
+			li {
+				position: relative;
+				line-height: 150%;
+				margin: 0px 0px 0px 0px;
+				& > ul, & > ol {
+					padding-top: rem(5);
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					top: em(10);
+					left: em(-11);
+					width: em(4);
+					height: em(4);
+					background: #000;
+					border-radius: 50%;
+				}
+			}
+		}
+
+		ul._check {
+			li {
+				&::before {
+					content: '';
+					position: absolute;
+					top: em(7);
+					left: em(-15);
+					width: em(5);
+					height: em(10);
+					border-width: 0 em(2) em(2) 0;
+					border-color: var(--color-main);
+					// opacity: 0;
+					transform: rotate(40deg);
+					border-style: solid;
+					display: block;
+					border-radius: 0;
+					background: transparent !important;
+				}
+			}
+		}
+
+		ol {
+			padding: 0px 0px 0px rem(22);
+			margin: 0px 0px rem(15) 0px;
+			li {
+				line-height: 150%;
+				margin: 0px 0px 0px 0px;
+				& > ul, & > ol {
+					padding-top: rem(5);
+				}
+			}
+		}
+
+		table {
+			table-layout: fixed;
+			min-width: 100%;
+			max-width: 100%;
+			border-collapse: collapse;
+			margin: 0px 0px rem(40) 0px;
+			@media (max-width: ($md3+'px')) {
+				margin: 0px 0px rem(20) 0px;
+			}
+			tr {
+				& > *:first-child {
+					padding-left: 0;
+				}
+				th {
+					font-size: rem(21);
+					padding: rem(25) rem(12.5);
+					border-bottom: 1px solid #D9D9D9;
+					text-align: left;
+					vertical-align: top;
+					b {
+						font-weight: 700;
+					}
+					p {
+						margin: 0 !important;
+					}
+				}
+				td {
+					border-bottom: 1px solid #D9D9D9;
+					padding: rem(25) rem(12.5);
+					vertical-align: middle;
+					p {
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+
+		.table-wrapper {
+			width: 100%;
+			overflow-x: auto;
+		}
+	}
+}
+
+// Оболочка контента сайта. Необходимма, чтобы футер всегда был прижат к низу экрана
+.wrapper {
+	display: grid;
+	grid-template-rows: 1fr auto;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	&._loaded {
+	}
+}
+
+// Основной блок
+.page {
+	min-width: 0;
+	padding: rem(124) 0px 0px 0px;
+	@media (max-width: em(1450)) {
+		padding: rem(64) 0px 0px 0px;
+	}
+	// .page__inner
+	&__inner {
+	}
+	// .page__section
+	&__section {
+		margin: 0px 0px rem(100) 0px;
+		@media (max-width: em($md3)) {
+			margin: 0px 0px rem(50) 0px;
+		}
+	}
+}
+
+
+
+
