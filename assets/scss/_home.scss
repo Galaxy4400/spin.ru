@@ -10,7 +10,6 @@
 		grid-template-columns: repeat(2, 1fr);
 		@media (max-width: em($md2)) {
 			grid-template-columns: repeat(1, 1fr);
-
 		}
 	}
 	// .main-head__column
@@ -92,7 +91,7 @@
 		@media (max-width: em($md2)) {
 			margin: 0px 0px rem(20) 0px;
 		}
-		
+
 		p {
 			color: #414140;
 			font-size: rem(16);
@@ -143,7 +142,7 @@
 			min-height: rem(500);
 		}
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			width: rem(9999);
 			height: 100%;
@@ -214,7 +213,6 @@
 	}
 }
 
-
 //===============================================================
 .products {
 	// .products__head
@@ -278,7 +276,7 @@
 	&__body {
 		width: 100%;
 		position: absolute;
-		top: calc(100% - rem(60));
+		top: calc(100% - rem(75));
 		transition: all 0.3s ease 0s;
 		z-index: 1;
 		&._active {
@@ -308,7 +306,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: rem(4);
-		height: rem(60);
+		height: rem(75);
 		background: var(--color-main);
 		padding: rem(5) rem(10);
 		color: #fff;
@@ -336,7 +334,7 @@
 	}
 	// .product-slide__content
 	&__content {
-		background: #F2F2F2;
+		background: #f2f2f2;
 		padding: rem(10);
 		height: rem(200);
 		overflow-y: scroll;
@@ -517,9 +515,9 @@
 	// .industry-slide__title
 	&__title {
 		color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1;
 	}
 	// .industry-slide__arrow
 	&__arrow {
@@ -534,7 +532,7 @@
 	}
 	// .industry-slide__content
 	&__content {
-		background: #F2F2F2;
+		background: #f2f2f2;
 		padding: rem(10);
 		height: rem(200);
 		overflow-y: scroll;
@@ -645,7 +643,7 @@
 	// .resources-slide__content
 	&__content {
 		height: rem(46);
-		background: #F2F2F2;
+		background: #f2f2f2;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -674,7 +672,7 @@
 	position: relative;
 	cursor: grab;
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		left: 0;
 		top: 23%;
@@ -831,7 +829,7 @@
 		align-items: center;
 		position: relative;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -842,7 +840,7 @@
 			z-index: 2;
 		}
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -865,4 +863,3 @@
 		font-size: rem(16);
 	}
 }
-

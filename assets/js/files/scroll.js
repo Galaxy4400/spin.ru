@@ -67,6 +67,7 @@ function actionsOnScroll() {
 	loadContentOnScroll();
 	highlightingAnchorLinks();
 	stickyAnchors();
+	stickyAside();
 }
 
 
@@ -318,6 +319,8 @@ document.querySelectorAll('[data-dynamic-loader]').forEach(dynamicLoader => {
 });
 
 
+//===============================================================
+
 let anchorStart = null;
 
 function stickyAnchors() {
@@ -330,11 +333,6 @@ function stickyAnchors() {
 		const headerRect = header.getBoundingClientRect();
 		const anchorsRect = anchors.getBoundingClientRect();
 
-		console.clear();
-		console.log(headerRect.bottom, anchorsRect.top);
-		console.log(anchorStart);
-		console.log(currentScroll);
-		
 		if (headerRect.bottom >= anchorsRect.top) {
 			anchors.classList.add('_sticky');
 
@@ -347,6 +345,46 @@ function stickyAnchors() {
 
 		if (anchorStart > currentScroll) {
 			anchors.classList.remove('_sticky');
+		}
+	}
+}
+
+
+
+//===============================================================
+
+let asideStart = null;
+
+function stickyAside() {
+	const currentScroll = window.pageYOffset;
+
+	const header = document.querySelector('.header');
+	const aside = document.querySelector('.base-details__aside');
+	const menu = document.querySelector('.aside-menu');
+
+	if (header && aside) {
+		const headerRect = header.getBoundingClientRect();
+		const asideRect = aside.getBoundingClientRect();
+		const menuRect = menu.getBoundingClientRect();
+
+		if (headerRect.bottom >= asideRect.top) {
+			aside.classList.add('_sticky');
+
+			asideStart = currentScroll;
+
+			if (asideStart === null) {
+				asideStart = headerRect.bottom;
+			}
+		}
+
+		if (asideStart > currentScroll) {
+			aside.classList.remove('_sticky');
+		}
+
+		if (menuRect.bottom >= asideRect.bottom && menuRect.height + 125 > asideRect.bottom) {
+			aside.classList.add('_bottom');
+		} else {
+			aside.classList.remove('_bottom');
 		}
 	}
 }
