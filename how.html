@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стартовая сборка</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script>
+		const LOCALIZATION = 'Russian'; // English, Spanish... Ключ локализации. При необходимости изменять в соответствии с ответом сервера.
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-fix>
+			<div class="header__container _container">
+				<div class="header__body">
+					<a class="header__logo" href="#">
+						<img src="assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu" data-menu="main-menu">
+						<nav class="menu__body" data-menu-container="main-menu">
+							<ul class="menu__list">
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Как это работает</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Возможности</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 2</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Материалы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 3</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Отрасли</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 4</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Ресурсы</button>
+									<!-- <div class="menu__sub-menu" data-menu-submenu>submenu content 5</div> -->
+								</li>
+								<li class="menu__item" data-menu-item>
+									<button class="menu__link" data-menu-control>Компания</button>
+									<div class="menu__sub-menu sub-menu" data-menu-submenu>
+										<div class="sub-menu__body">
+											<div class="sub-menu__part sub-menu__part_image">
+												<h4 class="sub-menu__title">Возможности</h4>
+												<p class="sub-menu__label">Прототипы и производственные детали</p>
+												<figure class="sub-menu__img _ibg">
+													<img src="assets/img/m3.jpg" alt="img">
+												</figure>
+											</div>
+											<div class="sub-menu__part sub-menu__part_main">
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">3D-печать</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги 3D-печати</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Моделирование наплавки (FDM)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Стереолитография (SLA)</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Селективное лазерное спекание (SLS)</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Обработка с ЧПУ</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги механической обработки с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Фрезерование с ЧПУ</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Токарная обработка с ЧПУ</a></li>
+															</ul>
+														</div>
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Дополнительные услуги</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги по изготовлению листового металла</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Услуги литья под давлением</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Производственные заказы</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="sub-menu__section">
+													<div class="sub-menu__column">
+														<div class="sub-menu__block">
+															<h5 class="sub-menu__block-name">Популярные варианты отделки</h5>
+															<ul class="sub-menu__links-list">
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">После механической обработки</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Плавная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Анодирование алюминия</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Дробеструйная обработка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Полировка</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Сглаживание паром</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Черный оксид</a></li>
+																<li class="sub-menu__links-item"><a class="sub-menu__link" href="#">Порошковое покрытие</a></li>
+															</ul>
+															<a class="sub-menu__more" href="#">Посмотреть все варианты отделки поверхности</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a class="menu__btn btn" href="#" data-adapt="menu,1380">Произвести</a>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__info main-contacts" data-adapt="menu__body,700">
+							<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+							<span>пн—пт с 9:00 до 18:00</span>
+						</div>
+						<button class="header__action _icon-search" type="button"></button>
+						<button class="header__action _icon-login" type="button"></button>
+						<button class="header__action menu-icon" type="button" data-menu-icon="main-menu"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="page__inner page-inner">
+
+				<header class="page-inner__head inner-head inner-head_bg">
+					<div class="inner-head__container _container">
+						<div class="inner-head__body">
+							<div class="inner-head__top">
+								<div class="inner-head__main">
+									<h1 class="inner-head__title">Как работает заказ на платформе</h1>
+									<nav class="inner-head__breadcrumbs breadcrumbs">
+										<ul class="breadcrumbs__list">
+											<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="Главная">Главная</a></li>
+											<li class="breadcrumbs__item"><span class="breadcrumbs__current" title="Как это работает">Как это работает</span></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="inner-head__bottom">
+								<div class="inner-head__text">
+									<p>Ваш заказ увидят поставщики услуг и предложат варианты решения.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<section class="page-inner__section">
+					<div class="_container-small">
+						<div class="num-cards">
+							<div class="num-cards__body">
+								<div class="num-cards__item num-card">
+									<a class="num-card__img _ibg">
+										<img src="assets/img/num-cards/1.jpg" alt="img">
+									</a>
+									<div class="num-card__content">
+										<h3 class="num-card__title"><a href="#"><span>1.</span>Загрузите модель, чертеж или фото</a></h3>
+										<p class="num-card__text">Выберите необходимые параметры изготовления детали</p>
+									</div>
+								</div>
+								<div class="num-cards__item num-card">
+									<a class="num-card__img _ibg">
+										<img src="assets/img/num-cards/2.jpg" alt="img">
+									</a>
+									<div class="num-card__content">
+										<h3 class="num-card__title"><a href="#"><span>2.</span>Дождитесь предложений от поставщиков и выберите подходящий вам вариант по цене и срокам изготовления</a></h3>
+										<p class="num-card__text">Оплатите заказ</p>
+									</div>
+								</div>
+								<div class="num-cards__item num-card">
+									<a class="num-card__img _ibg">
+										<img src="assets/img/num-cards/3.jpg" alt="img">
+									</a>
+									<div class="num-card__content">
+										<h3 class="num-card__title"><a href="#"><span>3.</span>Получите свой заказ</a></h3>
+										<p class="num-card__text">Проверьте качество готового изделия и завершите заказ в ЛК</p>
+									</div>
+								</div>
+							</div>
+							<div class="num-cards__actions">
+								<a class="num-cards__btn btn" href="#">Зарегистрироваться на платформе</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__section mechanic-details">
+					<div class="mechanic-details__container _container-narrow">
+						<div class="mechanic-details__section mechanic-video">
+							<div class="mechanic-video__image _video">
+								<video class="mechanic-video__video" controls>
+									<source src="assets/img/online-production-video.mp4" type="video/mp4">
+								</video>
+								<figure class="mechanic-video__plug video-plug _ibg" data-link="mechanic-video__video">
+									<img src="assets/img/video-plug.jpg" alt="plug">
+								</figure>
+							</div>
+							<h3 class="mechanic-video__title">Как сделать</h3>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__section photos-section">
+					<div class="photos-section__container _container">
+						<div class="photos-section__body">
+							<div class="photos-section__column photos-section__column_left">
+								<div class="photos-section__content">
+									<h3 class="photos-section__title">Гарантированное качество</h3>
+									<div class="photos-section__text _special-styles">
+										<p>Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности расчета Описание уникальной способности</p>
+									</div>
+								</div>
+							</div>
+							<div class="photos-section__column photos-section__column_right">
+								<div class="photos-section__slider big-photos-slider" data-swiper>
+									<div class="big-photos-slider__slides" data-gallery>
+										<div class="big-photos-slider__slide">
+											<a class="big-photos-slider__image _ibg" href="assets/img/photo.jpg">
+												<img src="assets/img/photo.jpg" alt="photo">
+											</a>
+										</div>
+										<div class="big-photos-slider__slide">
+											<a class="big-photos-slider__image _ibg" href="assets/img/photo.jpg">
+												<img src="assets/img/photo.jpg" alt="photo">
+											</a>
+										</div>
+										<div class="big-photos-slider__slide">
+											<a class="big-photos-slider__image _ibg" href="assets/img/photo.jpg">
+												<img src="assets/img/photo.jpg" alt="photo">
+											</a>
+										</div>
+									</div>
+									<div class="big-photos-slider__arrows slider-arrows">
+										<div class="big-photos-slider__arrow big-photos-slider__arrow_prev"></div>
+										<div class="big-photos-slider__arrow big-photos-slider__arrow_next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section">
+					<div class="_container-small">
+						<div class="_container">
+							<div class="head-line">
+								<h2 class="head-line__title">Производственный процесс</h2>
+							</div>
+						</div>
+						<div class="industries">
+							<div class="industries__item">
+								<div class="industry-card">
+									<a class="industry-card__img _ibg" href="#">
+										<img src="assets/img/ff4.jpg" alt="img">
+									</a>
+									<div class="industry-card__content">
+										<h4 class="industry-card__title"><a href="#">Заголовок в 2-3 строчки Заголовок в 2-3 строчки Заголовок в 2-3 строчки</a></h4>
+										<p class="industry-card__desc">Краткое описание 5-10 строчек Краткое описание 5-10 строчекКраткое описание 5-10 строчекКраткое описание 5-10 строчек</p>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item">
+								<div class="industry-card">
+									<a class="industry-card__img _ibg" href="#">
+										<img src="assets/img/ff4.jpg" alt="img">
+									</a>
+									<div class="industry-card__content">
+										<h4 class="industry-card__title"><a href="#">Заголовок в 2-3 строчки Заголовок в 2-3 строчки Заголовок в 2-3 строчки</a></h4>
+										<p class="industry-card__desc">Краткое описание 5-10 строчек Краткое описание 5-10 строчекКраткое описание 5-10 строчекКраткое описание 5-10 строчек</p>
+									</div>
+								</div>
+							</div>
+							<div class="industries__item">
+								<div class="industry-card">
+									<a class="industry-card__img _ibg" href="#">
+										<img src="assets/img/ff4.jpg" alt="img">
+									</a>
+									<div class="industry-card__content">
+										<h4 class="industry-card__title"><a href="#">Заголовок в 2-3 строчки Заголовок в 2-3 строчки Заголовок в 2-3 строчки</a></h4>
+										<p class="industry-card__desc">Краткое описание 5-10 строчек Краткое описание 5-10 строчекКраткое описание 5-10 строчекКраткое описание 5-10 строчек</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section">
+					<div class="_container-narrow">
+						<div class="img-blocks">
+							<div class="img-block">
+								<div class="img-block__column img-block__column_img">
+									<figure class="img-block__img _ibg">
+										<img src="assets/img/img-block/1.jpg" alt="img">
+									</figure>
+								</div>
+								<div class="img-block__column img-block__column_content">
+									<h4 class="img-block__title">Получите квалифицированную помощь</h4>
+									<div class="img-block__text">
+										<p>Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек </p>
+									</div>
+									<a class="img-block__link more-link" href="#">Связаться с нами</a>
+								</div>
+							</div>
+							<div class="img-block">
+								<div class="img-block__column img-block__column_img">
+									<figure class="img-block__img _ibg">
+										<img src="assets/img/img-block/2.jpg" alt="img">
+									</figure>
+								</div>
+								<div class="img-block__column img-block__column_content">
+									<h4 class="img-block__title">Услуги в день заказа</h4>
+									<div class="img-block__text">
+										<p>Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек </p>
+									</div>
+								</div>
+							</div>
+							<div class="img-block">
+								<div class="img-block__column img-block__column_img">
+									<figure class="img-block__img _ibg">
+										<img src="assets/img/img-block/3.jpg" alt="img">
+									</figure>
+								</div>
+								<div class="img-block__column img-block__column_content">
+									<h4 class="img-block__title">Серийное производство по запросу</h4>
+									<div class="img-block__text">
+										<p>Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек Небольшой текст 5-10 строчек </p>
+									</div>
+									<a class="img-block__link more-link" href="#">Запросить ценовое предложение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page__section reviews">
+					<div class="reviews__container _container">
+						<div class="reviews__head head-line head-line_link">
+							<h2 class="head-line__title">Отзывы</h2>
+							<a class="head-line__link more-link" href="#">Оставить отзыв</a>
+						</div>
+						<div class="reviews__body">
+							<div class="reviews__slider reviews-slider" data-swiper>
+								<div class="reviews-slider__slides">
+									<article class="reviews-slider__slide reviews-slide">
+										<div class="reviews-slide__head">
+											<div class="reviews-slide__persone review-persone">
+												<figure class="review-persone__photo _ibg">
+													<img src="assets/img/resources_img_1.png" alt="photo">
+												</figure>
+												<div class="review-persone__info">
+													<div class="review-persone__name">Иван Иванов</div>
+													<div class="review-persone__date">12 ноября 2020</div>
+												</div>
+											</div>
+											<div class="reviews-slide__vote">stars</div>
+										</div>
+										<div class="reviews-slide__body">
+											<div class="reviews-slide__text">
+												<p>Конкреция отталкивает прибор Качинского, вне зависимости от предсказаний теоретической модели явления. Иллимеризация растягивает подпахотный ортштейн. К.К.Гедройцем было показано, что цветность количественно отражает осадочный подбур. Лопата, в случае использования адаптивно-ландшафтных систем земледелия, сжимает ортзанд.</p>
+											</div>
+										</div>
+									</article>
+									<article class="reviews-slider__slide reviews-slide">
+										<div class="reviews-slide__head">
+											<div class="reviews-slide__persone review-persone">
+												<figure class="review-persone__photo _ibg">
+													<img src="assets/img/resources_img_1.png" alt="photo">
+												</figure>
+												<div class="review-persone__info">
+													<div class="review-persone__name">Иван Иванов</div>
+													<div class="review-persone__date">12 ноября 2020</div>
+												</div>
+											</div>
+											<div class="reviews-slide__vote">stars</div>
+										</div>
+										<div class="reviews-slide__body">
+											<div class="reviews-slide__text">
+												<p>Конкреция отталкивает прибор Качинского, вне зависимости от предсказаний теоретической модели явления. Иллимеризация растягивает подпахотный ортштейн. К.К.Гедройцем было показано, что цветность количественно отражает осадочный подбур. Лопата, в случае использования адаптивно-ландшафтных систем земледелия, сжимает ортзанд.</p>
+											</div>
+										</div>
+									</article>
+									<article class="reviews-slider__slide reviews-slide">
+										<div class="reviews-slide__head">
+											<div class="reviews-slide__persone review-persone">
+												<figure class="review-persone__photo _ibg">
+													<img src="assets/img/resources_img_1.png" alt="photo">
+												</figure>
+												<div class="review-persone__info">
+													<div class="review-persone__name">Иван Иванов</div>
+													<div class="review-persone__date">12 ноября 2020</div>
+												</div>
+											</div>
+											<div class="reviews-slide__vote">stars</div>
+										</div>
+										<div class="reviews-slide__body">
+											<div class="reviews-slide__text">
+												<p>Конкреция отталкивает прибор Качинского, вне зависимости от предсказаний теоретической модели явления. Иллимеризация растягивает подпахотный ортштейн. К.К.Гедройцем было показано, что цветность количественно отражает осадочный подбур. Лопата, в случае использования адаптивно-ландшафтных систем земледелия, сжимает ортзанд.</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="reviews-slider__actions">
+									<div class="reviews-slider__arrows slider-arrows">
+										<button class="reviews-slider__arrow reviews-slider__arrow_prev _icon-arrow-2" type="button"></button>
+										<button class="reviews-slider__arrow reviews-slider__arrow_next _icon-arrow-2" type="button"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page-inner__section offer-line">
+					<div class="offer-line__container _container">
+						<div class="offer-line__body">
+							<h2 class="offer-line__title">У нас ваши запчасти в надежных руках. Начните производственный проект уже сегодня.</h2>
+							<a class="offer-line__btn btn btn_light" href="#">оставить заявку</a>
+						</div>
+					</div>
+					<figure class="offer-line__bg _ibg">
+					</figure>
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__body">
+					<div class="footer__column footer__column_2">
+						<div class="footer__menu footer-menu">
+							<a class="footer-menu__link" href="#">О нас</a>
+							<a class="footer-menu__link" href="#">Каталог</a>
+							<a class="footer-menu__link" href="#">Как сделать заказ</a>
+							<a class="footer-menu__link" href="#">Как связаться</a>
+							<a class="footer-menu__link" href="#">Возможности</a>
+							<a class="footer-menu__link" href="#">Гос. закупки</a>
+							<a class="footer-menu__link" href="#">Стать дилером</a>
+							<a class="footer-menu__link" href="#">Кейсы</a>
+							<a class="footer-menu__link" href="#">Гарантии и возврат</a>
+							<a class="footer-menu__link" href="#">Стать партнером</a>
+							<a class="footer-menu__link" href="#">Материалы</a>
+							<a class="footer-menu__link" href="#">Ответственность поставщика</a>
+							<a class="footer-menu__link" href="#">Устойчивое развитие</a>
+							<a class="footer-menu__link" href="#">Акции</a>
+							<a class="footer-menu__link" href="#">Отрасли</a>
+							<a class="footer-menu__link" href="#">Уведомление об авторских правах</a>
+							<a class="footer-menu__link" href="#">Работа</a>
+							<a class="footer-menu__link" href="#">События (выставки/форумы)</a>
+							<a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__column footer__column_3">
+						<div class="footer__contacts footer-contacts">
+							<div class="footer-contacts__chats">
+								<span>Чат с менеджером</span>
+								<a class="_icon-wu" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+							</div>
+							<div class="footer-contacts__info main-contacts">
+								<a href="tel:+74992134920">+7 (499) 213 49 20</a>
+								<span>пн—пт с 9:00 до 18:00</span>
+							</div>
+							<a class="footer-contacts__email" href="mailto:zakaz@spin.moscow">zakaz@spin.moscow</a>
+							<span class="footer-contacts__address">г. Москва, Дмитровское ш., д. 9, стр. 3</span>
+							<div class="footer-contacts__actions">
+								<button class="footer-contacts__btn btn" type="button">оставить заявку</button>
+								<button class="footer-contacts__btn btn" type="button">Произвести</button>
+							</div>
+							<div class="footer-contacts__socials socials">
+								<a class="_icon-yt" href="#"></a>
+								<a class="_icon-tg" href="#"></a>
+								<a class="_icon-tt" href="#"></a>
+								<a class="_icon-dzen" href="#"></a>
+								<a class="_icon-ch" href="#"></a>
+								<a class="_icon-vk" href="#"></a>
+								<a class="_icon-pf" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<button class="move-up _fixed-block" type="button" data-move-up data-goto="wrapper"></button>
+
+	<button class="chat _icon-chat _fixed-block" type="button"></button>
+
+	<!-- libs -->
+	<script src="assets/js/libs/lazyload.min.js"></script>
+	<script src="assets/js/libs/choices.min.js"></script>
+	<script src="assets/js/libs/nouislider.min.js"></script>
+	<script src="assets/js/libs/inputmask.min.js"></script>
+	<script src="assets/js/libs/justvalidate.min.js"></script>
+	<script src="assets/js/libs/datepicker.min.js"></script>
+	<script src="assets/js/libs/swiper.min.js"></script>
+	<script src="assets/js/libs/lightgallery.min.js"></script>
+	<script src="assets/js/libs/aos.min.js"></script>
+
+	<!-- plugins -->
+	<script src="assets/js/plugins/adapt.js"></script>
+	<script src="assets/js/plugins/menu.js"></script>
+	<script src="assets/js/plugins/modal.js"></script>
+	<script src="assets/js/plugins/tabs.js"></script>
+	<script src="assets/js/plugins/spoiler.js"></script>
+	<script src="assets/js/plugins/rating.js"></script>
+
+	<!-- files -->
+	<script src="assets/js/files/functions.js"></script>
+	<script src="assets/js/files/forms.js"></script>
+	<script src="assets/js/files/sliders.js"></script>
+	<script src="assets/js/files/scroll.js"></script>
+	<script src="assets/js/files/media.js"></script>
+	<script src="assets/js/files/scripts.js"></script>
+
+</body>
+
+</html>
