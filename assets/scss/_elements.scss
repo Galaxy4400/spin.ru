@@ -25,7 +25,7 @@
 		&_video {
 			&::before,
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				pointer-events: none;
 				z-index: 3;
@@ -64,7 +64,6 @@
 		}
 	}
 }
-
 
 /**
  * Стили иконки меню
@@ -109,7 +108,6 @@
 		}
 	}
 }
-
 
 // .header__info
 .main-contacts {
@@ -164,22 +162,21 @@
 	}
 	&::after {
 		content: "";
-    display: flex;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: rgba(195, 22, 37, 0.2);
-    animation: pulsate 2.5s ease-out;
-    animation-iteration-count: infinite;
-    opacity: 0;
-    z-index: -1;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+		display: flex;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(195, 22, 37, 0.2);
+		animation: pulsate 2.5s ease-out;
+		animation-iteration-count: infinite;
+		opacity: 0;
+		z-index: -1;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
 	}
 }
-
 
 /**
  * Стили хлебных крошек
@@ -195,7 +192,7 @@
 		display: flex;
 		align-items: center;
 		&:not(:last-child)::after {
-			content: '/';
+			content: "/";
 			margin: 0px rem(10);
 			color: #747474;
 			font-weight: 500;
@@ -230,7 +227,6 @@
 	}
 }
 
-
 /**
  * Стили пагинации
  */
@@ -255,7 +251,6 @@
 	}
 }
 
-
 /**
  * Стили иконки возврата к началу страницы
  */
@@ -270,13 +265,16 @@
 	color: #000;
 	opacity: 0;
 	visibility: hidden;
-	transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+	transition:
+		background-color 0.3s,
+		opacity 0.3s,
+		visibility 0.3s;
 	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 	z-index: 50;
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: var(--color-main-dark);
-			&::before, 
+			&::before,
 			&::after {
 				background: #fff;
 			}
@@ -291,30 +289,30 @@
 		height: rem(30);
 		font-size: rem(14);
 	}
-	&::before, 
+	&::before,
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
-    height: rem(3);
+		height: rem(3);
 		width: rem(12);
 		top: 50%;
 		left: 50%;
 		background: #000;
 		border-radius: rem(2);
 		transition: all 0.3s ease 0s;
-		@media (max-width: ($md4+'px')) {
+		@media (max-width: ($md4+"px")) {
 			height: rem(2);
 			width: rem(10);
 		}
 	}
 	&::before {
 		transform: translate(calc(-50% + rem(3.5)), -50%) rotate(45deg);
-		@media (max-width: ($md4+'px')) {
+		@media (max-width: ($md4+"px")) {
 			transform: translate(calc(-50% + rem(3)), -50%) rotate(45deg);
 		}
-	} 
+	}
 	&:after {
-		@media (max-width: ($md4+'px')) {
+		@media (max-width: ($md4+"px")) {
 			transform: translate(calc(-50% - rem(3)), -50%) rotate(-45deg);
 		}
 		transform: translate(calc(-50% - rem(3.5)), -50%) rotate(-45deg);
@@ -391,7 +389,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: rem(10);
-	background: #F2F2F2;
+	background: #f2f2f2;
 	border-radius: rem(999);
 	& > * {
 		display: flex;
@@ -446,7 +444,7 @@
 		z-index: 2;
 	}
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -479,7 +477,6 @@
 		justify-content: center;
 	}
 }
-
 
 //===============================================================
 .download-document {
@@ -571,13 +568,13 @@
 
 	table {
 		margin: 0 !important;
-		tr, td {
+		tr,
+		td {
 			padding-top: rem(10) !important;
 			padding-bottom: rem(10) !important;
 			font-size: rem(14) !important;
 		}
 	}
-
 }
 
 //===============================================================
@@ -593,7 +590,8 @@
 
 		table {
 			margin: 0 !important;
-			tr, td {
+			tr,
+			td {
 				padding-top: rem(10) !important;
 				padding-bottom: rem(10) !important;
 				font-size: rem(14) !important;
@@ -667,7 +665,6 @@
 	}
 }
 
-
 //===============================================================
 .tag {
 	display: inline-flex;
@@ -686,7 +683,7 @@
 //===============================================================
 .spoiler {
 	& > *:not(:last-child) {
-		border-bottom: rem(1) solid #D9D9D9;
+		border-bottom: rem(1) solid #d9d9d9;
 	}
 	// .spoiler__item
 	&__item {
@@ -707,7 +704,7 @@
 			transition: all 0.3s ease 0s;
 		}
 		&._active {
-			&::before { 
+			&::before {
 				rotate: 180deg;
 			}
 		}
@@ -729,7 +726,6 @@
 	display: flex;
 	justify-content: center;
 }
-
 
 //===============================================================
 .loading-more {
@@ -761,15 +757,15 @@
 //===============================================================
 //===============================================================
 @keyframes pulsate {
-  0% {
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2, 1.2);
-    opacity: 0;
-  }
+	0% {
+		transform: scale(0.1, 0.1);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.2, 1.2);
+		opacity: 0;
+	}
 }
