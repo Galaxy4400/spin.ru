@@ -736,6 +736,20 @@
 		align-items: center;
 		margin: 0px 0px rem(22) 0px;
 	}
+	// .advantages-slide__num
+	&__num {
+		display: flex;
+		width: rem(105);
+		height: rem(105);
+		text-align: center;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px rem(22) 0px;
+		color: #414140;
+		font-size: rem(64);
+		font-weight: 700;
+	}
 	// .advantages-slide__title
 	&__title {
 		font-weight: 500;
@@ -1059,5 +1073,184 @@
 	}
 	// .card-2__link
 	&__link {
+	}
+}
+
+//===============================================================
+.advantage-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: rem(30) rem(50);
+	@media (max-width: em($md3)) {
+		grid-template-columns: repeat(1, 1fr);
+		gap: rem(15) rem(20);
+	}
+	// .advantage-cards__card
+	&__card {
+	}
+}
+
+.advantage-card {
+	display: grid;
+	grid-template-columns: rem(237) 1fr;
+	gap: rem(15) rem(30);
+	@media (max-width: em($md1)) {
+		grid-template-columns: rem(200) 1fr;
+	}
+	@media (max-width: em($md2)) {
+		grid-template-columns: rem(150) 1fr;
+	}
+	@media (max-width: em($md3)) {
+		grid-template-columns: 1fr;
+	}
+	// .advantage-card__column
+	&__column {
+		// .advantage-card__column_img
+		&_img {
+			text-align: center;
+		}
+		// .advantage-card__column_content
+		&_content {
+			@media (max-width: em($md3)) {
+				text-align: center;
+			}
+		}
+	}
+	// .advantage-card__img
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px rem(15) 0px;
+	}
+	// .advantage-card__title
+	&__title {
+		font-size: rem(18);
+		font-weight: 500;
+		line-height: 144.444%;
+	}
+}
+
+//===============================================================
+.why {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: rem(30);
+	@media (max-width: em($md2)) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: em($md3)) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	// .why__item
+	&__item {
+		background: var(--color-background);
+		padding: rem(30);
+		text-align: center;
+	}
+	// .why__value
+	&__value {
+		margin: 0px 0px rem(15) 0px;
+		color: var(--color-main);
+		font-size: rem(64);
+		font-weight: 700;
+		line-height: normal;
+	}
+	// .why__title
+	&__title {
+		text-align: center;
+		font-size: rem(16);
+		font-weight: 700;
+		line-height: normal;
+	}
+}
+
+//===============================================================
+.partners-slider {
+	position: relative;
+	cursor: grab;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 23%;
+		width: 100%;
+		height: rem(1);
+		background: var(--color-main);
+	}
+	// .partners-slider__slides
+	&__slides {
+		margin: 0px 0px rem(50) 0px;
+		justify-content: space-between;
+		._outside & {
+			justify-content: unset;
+		}
+	}
+	// .partners-slider__slide
+	&__slide {
+	}
+	// .partners-slider__actions
+	&__actions {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		._outside & {
+			display: flex;
+		}
+	}
+	// .partners-slider__arrows
+	&__arrows {
+	}
+	// .partners-slider__arrow
+	&__arrow {
+		// .partners-slider__arrow_prev
+		&_prev {
+		}
+		// .partners-slider__arrow_next
+		&_next {
+		}
+	}
+}
+
+//---------------------------------------------------------------
+.partners-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	width: rem(240);
+	// .partners-slide__content
+	&__content {
+		text-align: center;
+	}
+	// .partners-slide__image
+	&__image {
+		width: rem(105);
+		height: rem(105);
+		text-align: center;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px rem(22) 0px;
+	}
+	// .partners-slide__num
+	&__num {
+		display: flex;
+		width: rem(105);
+		height: rem(105);
+		text-align: center;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px rem(22) 0px;
+		color: #414140;
+		font-size: rem(64);
+		font-weight: 700;
+	}
+	// .partners-slide__title
+	&__title {
+		font-weight: 500;
+		max-width: rem(200);
 	}
 }

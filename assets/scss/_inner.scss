@@ -2402,3 +2402,82 @@
 	&__btn {
 	}
 }
+
+//===============================================================
+.contacts-card {
+	padding: rem(15);
+	background: var(--color-background);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: rem(30);
+	@media (max-width: em($md3)) {
+		grid-template-columns: 1fr;
+	}
+	// .contacts-card__column
+	&__column {
+		// .contacts-card__column_content
+		&_content {
+			@media (max-width: em($md3)) {
+				order: 2;
+			}
+		}
+		// .contacts-card__column_img
+		&_img {
+			@media (max-width: em($md3)) {
+				order: 1;
+			}
+		}
+	}
+	// .contacts-card__top
+	&__top {
+		border-bottom: rem(1) solid #d9d9d9;
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .contacts-card__position-label
+	&__position-label {
+		color: #414140;
+		font-size: rem(18);
+		font-weight: 400;
+		line-height: 144.444%;
+		margin: 0px 0px rem(10) 0px;
+	}
+	// .contacts-card__position
+	&__position {
+		color: #000;
+		font-family: "TT Norms Pro";
+		font-size: rem(20);
+		font-weight: 700;
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .contacts-card__botom
+	&__botom {
+	}
+	// .contacts-card__contacts
+	&__contacts {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(15) rem(50);
+		margin: 0px 0px rem(20) 0px;
+	}
+	// .contacts-card__contact-item
+	&__contact-item {
+	}
+	// .contacts-card__contact-label
+	&__contact-label {
+		color: #414140;
+		font-size: rem(18);
+		font-weight: 400;
+		line-height: 144.444%;
+		margin: 0px 0px rem(5) 0px;
+	}
+	// .contacts-card__contact-link
+	&__contact-link {
+		color: #000;
+		font-family: "TT Norms Pro";
+		font-size: rem(20);
+		font-weight: 700;
+	}
+	// .contacts-card__description
+	&__description {
+	}
+}
