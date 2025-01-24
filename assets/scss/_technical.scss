@@ -10,6 +10,19 @@
 /**
  * Устанавливает ограничение блоку по ширине
  */
+._container-2 {
+	max-width: rem(1400);
+	padding: 0px px($containerPadding);
+	margin: 0 auto;
+	._container-small,
+	._container-narrow {
+		padding: 0;
+	}
+}
+
+/**
+ * Устанавливает ограничение блоку по ширине
+ */
 ._container-small {
 	max-width: rem(1194);
 	padding: 0px px($containerPadding);
@@ -49,7 +62,8 @@
  */
 ._ibg {
 	position: relative;
-	img, video {
+	img,
+	video {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -84,7 +98,7 @@
  */
 ._req {
 	&::after {
-		content: '*';
+		content: "*";
 		color: var(--color-font);
 		margin: 0px 0px 0px rem(3);
 	}

@@ -425,6 +425,7 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
+
 	// .action-slide__image
 	&__image {
 		display: inline-block;
@@ -455,6 +456,22 @@
 	// .action-slide__text
 	&__text {
 		flex: 1 1 auto;
+	}
+	// .action-slide__list
+	&__list {
+		display: grid;
+		gap: rem(15);
+	}
+	// .action-slide__item
+	&__item {
+		position: relative;
+		padding-left: rem(37);
+		&::before {
+			content: url("../img/checkmark.svg");
+			position: absolute;
+			top: rem(1);
+			left: 0;
+		}
 	}
 	// .action-slide__footer
 	&__footer {
@@ -1941,6 +1958,13 @@
 		flex: 0 1 33.333%;
 		padding: rem(7.5);
 	}
+
+	// .values_ha
+	&_ha {
+		.values-item {
+			height: auto;
+		}
+	}
 }
 
 .values-item {
@@ -2479,5 +2503,73 @@
 	}
 	// .contacts-card__description
 	&__description {
+	}
+}
+
+//===============================================================
+.card-top {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: rem(30);
+	align-items: center;
+	justify-content: center;
+	padding: rem(30);
+	// .card-top__icon
+	&__icon {
+	}
+	// .card-top__content
+	&__content {
+	}
+	// .card-top__title
+	&__title {
+		color: #000;
+		font-size: rem(18);
+		font-weight: 500;
+		margin: 0px 0px rem(5) 0px;
+	}
+	// .card-top__label
+	&__label {
+		color: #414140;
+		font-family: "TT Norms Pro";
+		font-size: rem(18);
+		font-weight: 400;
+	}
+}
+
+//===============================================================
+.char-block {
+	position: relative;
+	// .char-block__chart
+	&__chart {
+		color: #000;
+		font-family: "TT Norms Pro";
+		font-size: rem(36);
+		font-weight: 700;
+		margin: 0px 0px rem(15) 0px;
+		@media (min-width: em($md0+1)) {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+//===============================================================
+.small-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: rem(15);
+	margin: 0px 0px rem(50) 0px;
+	@media (max-width: em($md3)) {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0px 0px rem(30) 0px;
+	}
+	// .small-gallery__item
+	&__item {
+		position: relative;
+	}
+	// .small-gallery__img
+	&__img {
+		padding: 0px 0px prc(394, 590) 0px;
 	}
 }
