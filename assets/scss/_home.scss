@@ -905,6 +905,8 @@
 }
 
 .num-card {
+	display: flex;
+	flex-direction: column;
 	// .num-card__img
 	&__img {
 		position: relative;
@@ -922,6 +924,7 @@
 	&__content {
 		padding: rem(15);
 		background: var(--color-background);
+		flex: 1 1 auto;
 	}
 	// .num-card__title
 	&__title {
@@ -1048,14 +1051,20 @@
 
 //===============================================================
 .cards-2 {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: rem(15);
-	@media (max-width: em($md2)) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@media (max-width: em($md3)) {
-		grid-template-columns: repeat(1, 1fr);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: rem(-7.5);
+	// .cards-2__column
+	&__column {
+		flex: 0 1 33.333%;
+		padding: rem(7.5);
+		@media (max-width: em($md2)) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: em($md3)) {
+			flex: 0 1 100%;
+		}
 	}
 }
 

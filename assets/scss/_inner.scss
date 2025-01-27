@@ -492,15 +492,15 @@
 		display: flex;
 		&._sticky {
 			position: fixed;
-			top: rem(124);
+			// top: rem(124);
 			width: 100%;
 			z-index: 10;
 		}
-		@media (max-width: em(1380)) {
-			&._sticky {
-				top: rem(64);
-			}
-		}
+		// @media (max-width: em(1380)) {
+		// 	&._sticky {
+		// 		top: rem(64);
+		// 	}
+		// }
 		@media (max-width: em($md3)) {
 			display: none;
 		}
