@@ -60,3 +60,37 @@ $fontFamily: "TT Norms Pro";
 @import "design";
 @import "about";
 @import "blog";
+
+//===============================================================
+.dropdown,
+.dropup {
+	.btn {
+		color: #000 !important;
+	}
+}
+
+.page-features {
+	padding: rem(50) !important;
+	@media (max-width: em($md3)) {
+		padding: rem(20) !important;
+	}
+
+	.page-features__item {
+		@media (max-width: em($md3)) {
+			padding-left: rem(50) !important;
+		}
+	}
+}
+
+.btn-link {
+	padding: 0 10px !important;
+}
+
+.btn-outline-primary {
+	color: var(--color-main) !important;
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff !important;
+		}
+	}
+}

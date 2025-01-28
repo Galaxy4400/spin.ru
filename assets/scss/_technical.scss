@@ -188,3 +188,17 @@
 	-webkit-line-clamp: var(--max-lines);
 	overflow: hidden;
 }
+
+//===============================================================
+._mark-li {
+	ul > li {
+		position: relative;
+		padding-left: rem(37);
+		&::before {
+			content: url("../img/checkmark.svg");
+			position: absolute;
+			top: rem(1);
+			left: 0;
+		}
+	}
+}

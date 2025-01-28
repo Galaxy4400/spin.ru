@@ -3,7 +3,7 @@
 	position: fixed;
 	width: 100%;
 	background: #fff;
-	z-index: 50;
+	z-index: 999;
 	transition: box-shadow 0.3s;
 	&._scroll {
 		box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
@@ -152,7 +152,7 @@
 		transition: all 0.3s ease 0s;
 		background: transparent;
 		&::before {
-			content: '';
+			content: "";
 			position: absolute;
 			width: calc(100% - rem(20));
 			height: rem(2);
@@ -299,15 +299,15 @@
 	}
 	// .sub-menu__title
 	&__title {
-		color: #FFF;
+		color: #fff;
 		font-size: rem(20);
 		font-weight: 500;
 		margin: 0px 0px rem(5) 0px;
-		text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 	}
 	// .sub-menu__label
 	&__label {
-		color: #B4B3B4;
+		color: #b4b3b4;
 		font-size: rem(14);
 		font-weight: 500;
 		line-height: 1;
@@ -321,7 +321,7 @@
 		left: 0;
 		z-index: -1;
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			inset: 0;
 			background: rgba(0, 0, 0, 0.5);
@@ -345,7 +345,7 @@
 		}
 		&:not(:last-child) {
 			@media (min-width: em(1381)) {
-				border-right: rem(1) solid #EBEBEB;
+				border-right: rem(1) solid #ebebeb;
 			}
 		}
 	}
@@ -366,7 +366,7 @@
 	}
 	// .sub-menu__block-name
 	&__block-name {
-		color: #A2A2A2;
+		color: #a2a2a2;
 		font-size: rem(12);
 		font-weight: 500;
 	}

@@ -464,14 +464,6 @@
 	}
 	// .action-slide__item
 	&__item {
-		position: relative;
-		padding-left: rem(37);
-		&::before {
-			content: url("../img/checkmark.svg");
-			position: absolute;
-			top: rem(1);
-			left: 0;
-		}
 	}
 	// .action-slide__footer
 	&__footer {
@@ -615,16 +607,16 @@
 	&__body {
 		width: 100%;
 		position: absolute;
-		top: calc(100% - rem(46));
+		top: calc(100% - rem(75));
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover) {
 			.case-slide:hover & {
-				top: calc(100% - rem(46 + 200));
+				top: calc(100% - rem(60 + 200));
 			}
 		}
 		@media (any-hover: none) {
 			&._active {
-				top: calc(100% - rem(46 + 200));
+				top: calc(100% - rem(60 + 200));
 			}
 		}
 	}
@@ -634,7 +626,7 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: rem(4);
-		height: rem(46);
+		height: rem(75);
 		background: var(--color-main);
 		padding: rem(5) rem(10);
 		color: #fff;
