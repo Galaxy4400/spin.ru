@@ -11720,6 +11720,26 @@ textarea.input {
   padding: 0px 0px 66.7796610169% 0px;
 }
 
+.evolution__content {
+  margin: 0px 0px 1.875rem 0px;
+}
+.evolution__title {
+  max-width: 22.5rem;
+  margin: 0px 0px 1.5625rem 0px;
+}
+.evolution__text {
+  margin: 0px 0px 1.5625rem 0px;
+}
+.evolution__grid {
+  display: grid;
+  gap: 1.875rem 0.9375rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+@media (max-width: 47.9375em) {
+  .evolution__grid {
+    gap: 0.9375rem;
+  }
+}
 .design__section {
   margin: 0px 0px 3.125rem 0px;
 }
