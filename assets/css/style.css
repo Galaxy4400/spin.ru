@@ -9240,16 +9240,36 @@ textarea.input {
   justify-items: start;
 }
 .advantage-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.875rem 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -0.9375rem -1.5625rem;
 }
 @media (max-width: 47.9375em) {
   .advantage-cards {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.9375rem 1.25rem;
+    margin: -0.4375rem -0.75rem;
   }
 }
+.advantage-cards__card {
+  padding: 0.9375rem 1.5625rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+@media (max-width: 47.9375em) {
+  .advantage-cards__card {
+    padding: 0.4375rem 0.75rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
 .advantage-card {
   display: grid;
   grid-template-columns: 14.8125rem 1fr;
@@ -9297,24 +9317,48 @@ textarea.input {
 }
 
 .why {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -0.9375rem;
+}
+.why__column {
+  padding: 0.9375rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 @media (max-width: 61.9375em) {
-  .why {
-    grid-template-columns: repeat(2, 1fr);
+  .why__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
   }
 }
 @media (max-width: 47.9375em) {
-  .why {
-    grid-template-columns: repeat(1, 1fr);
+  .why__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+@media (max-width: 29.9375em) {
+  .why__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 .why__item {
   background: var(--color-background);
   padding: 1.875rem;
   text-align: center;
+  height: 100%;
 }
 .why__value {
   margin: 0px 0px 0.9375rem 0px;

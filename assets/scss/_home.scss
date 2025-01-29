@@ -1087,15 +1087,28 @@
 
 //===============================================================
 .advantage-cards {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: rem(30) rem(50);
+	// display: grid;
+	// grid-template-columns: repeat(2, 1fr);
+	// gap: rem(30) rem(50);
+	// @media (max-width: em($md3)) {
+	// 	grid-template-columns: repeat(1, 1fr);
+	// 	gap: rem(15) rem(20);
+	// }
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: rem(-15) rem(-25);
 	@media (max-width: em($md3)) {
-		grid-template-columns: repeat(1, 1fr);
-		gap: rem(15) rem(20);
+		margin: rem(-7) rem(-12);
 	}
 	// .advantage-cards__card
 	&__card {
+		padding: rem(15) rem(25);
+		flex: 0 1 50%;
+		@media (max-width: em($md3)) {
+			padding: rem(7) rem(12);
+			flex: 0 1 100%;
+		}
 	}
 }
 
@@ -1142,20 +1155,30 @@
 
 //===============================================================
 .why {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: rem(30);
-	@media (max-width: em($md2)) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@media (max-width: em($md3)) {
-		grid-template-columns: repeat(1, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: rem(-15);
+	// .why__column
+	&__column {
+		padding: rem(15);
+		flex: 0 1 25%;
+		@media (max-width: em($md2)) {
+			flex: 0 1 33.333%;
+		}
+		@media (max-width: em($md3)) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: em($md4)) {
+			flex: 0 1 100%;
+		}
 	}
 	// .why__item
 	&__item {
 		background: var(--color-background);
 		padding: rem(30);
 		text-align: center;
+		height: 100%;
 	}
 	// .why__value
 	&__value {
