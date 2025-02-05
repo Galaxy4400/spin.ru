@@ -675,7 +675,7 @@
 		content: "";
 		position: absolute;
 		left: 0;
-		top: 23%;
+		top: 15%;
 		width: 100%;
 		height: rem(1);
 		background: var(--color-main);
@@ -721,33 +721,37 @@
 	justify-content: center;
 	align-items: center;
 	background: #fff;
-	width: rem(240);
+	// width: rem(240);
 	// .advantages-slide__content
 	&__content {
 		text-align: center;
+		background: #fff;
+		padding: 0px rem(20);
 	}
 	// .advantages-slide__image
-	&__image {
-		width: rem(105);
-		height: rem(105);
-		text-align: center;
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0px 0px rem(22) 0px;
-	}
+	// &__image {
+	// 	width: rem(105);
+	// 	height: rem(105);
+	// 	text-align: center;
+	// 	display: inline-flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	margin: 0px 0px rem(22) 0px;
+	// }
 	// .advantages-slide__num
 	&__num {
 		display: flex;
-		width: rem(105);
-		height: rem(105);
+		// @include adaptiv-value(width, 150, 105, 1);
+		// @include adaptiv-value(height, 105, 30, 1);
+		// height: rem(105);
 		text-align: center;
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
+		line-height: 1;
 		margin: 0px 0px rem(22) 0px;
 		color: #414140;
-		font-size: rem(64);
+		@include adaptiv-value(font-size, 64, 40, 1);
 		font-weight: 700;
 	}
 	// .advantages-slide__title
@@ -1087,13 +1091,6 @@
 
 //===============================================================
 .advantage-cards {
-	// display: grid;
-	// grid-template-columns: repeat(2, 1fr);
-	// gap: rem(30) rem(50);
-	// @media (max-width: em($md3)) {
-	// 	grid-template-columns: repeat(1, 1fr);
-	// 	gap: rem(15) rem(20);
-	// }
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1116,6 +1113,7 @@
 	display: grid;
 	grid-template-columns: rem(237) 1fr;
 	gap: rem(15) rem(30);
+	align-items: center;
 	@media (max-width: em($md1)) {
 		grid-template-columns: rem(200) 1fr;
 	}

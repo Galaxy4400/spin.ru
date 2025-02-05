@@ -202,3 +202,20 @@
 		}
 	}
 }
+
+//===============================================================
+._sustem-li {
+	ul {
+		padding: 0;
+		list-style-type: disc;
+		text-align: center;
+		padding-left: 0;
+		li {
+			list-style: disc;
+			list-style-position: inside;
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

@@ -237,6 +237,8 @@ const isAdvantageSlidesOutside = isSlidesOutside(
 	document.querySelector(".advantages__container")
 );
 
+const advantagesSliderItemsCoutn = document.querySelectorAll(".advantages-slide").length;
+
 const advantagesSlider = new Swiper(".advantages-slider", {
 	speed: 500,
 	spaceBetween: isAdvantageSlidesOutside ? 97 : 0,
@@ -247,10 +249,10 @@ const advantagesSlider = new Swiper(".advantages-slider", {
 		disabledClass: "_disabled",
 	},
 	breakpoints: {
-		320: { slidesPerView: 2 },
-		480: { slidesPerView: 3 },
-		768: { slidesPerView: 4 },
-		992: { slidesPerView: 5 },
+		320: { slidesPerView: advantagesSliderItemsCoutn >= 2 ? 2 : advantagesSliderItemsCoutn },
+		480: { slidesPerView: advantagesSliderItemsCoutn >= 3 ? 3 : advantagesSliderItemsCoutn },
+		768: { slidesPerView: advantagesSliderItemsCoutn >= 4 ? 4 : advantagesSliderItemsCoutn },
+		992: { slidesPerView: advantagesSliderItemsCoutn >= 5 ? 5 : advantagesSliderItemsCoutn },
 	},
 	on: {
 		init: (swiper) => isAdvantageSlidesOutside && swiper.el.classList.add("_outside"),

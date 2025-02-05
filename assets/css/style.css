@@ -6067,6 +6067,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   left: 0;
 }
 
+._sustem-li ul {
+  padding: 0;
+  list-style-type: disc;
+  text-align: center;
+  padding-left: 0;
+}
+._sustem-li ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+._sustem-li ul li::before {
+  display: none;
+}
+
 :root {
   --color-error:	#b81111;
   --color-warning:	#ffc107;
@@ -8863,7 +8877,7 @@ textarea.input {
   content: "";
   position: absolute;
   left: 0;
-  top: 23%;
+  top: 15%;
   width: 100%;
   height: 0.0625rem;
   background: var(--color-main);
@@ -8908,32 +8922,16 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
-  width: 15rem;
 }
 .advantages-slide__content {
   text-align: center;
-}
-.advantages-slide__image {
-  width: 6.5625rem;
-  height: 6.5625rem;
-  text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px 0px 1.375rem 0px;
+  background: #fff;
+  padding: 0px 1.25rem;
 }
 .advantages-slide__num {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 6.5625rem;
-  height: 6.5625rem;
   text-align: center;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8944,10 +8942,16 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1;
   margin: 0px 0px 1.375rem 0px;
   color: #414140;
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 700;
+}
+@media (max-width: 1626px) {
+  .advantages-slide__num {
+    font-size: calc(40px + 24 * (100vw - 320px) / 1306);
+  }
 }
 .advantages-slide__title {
   font-weight: 500;
@@ -9274,6 +9278,9 @@ textarea.input {
   display: grid;
   grid-template-columns: 14.8125rem 1fr;
   gap: 0.9375rem 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 75em) {
   .advantage-card {
